@@ -1087,7 +1087,7 @@ async def disassociate_cat(
 # Also move POST /cats endpoint here to ensure it's registered
 @app.post("/cats", response_model=None)
 async def create_cat(request: Request, credentials: HTTPAuthorizationCredentials = Depends(security)):
-        txn_id = log_transaction_start(request)
+    txn_id = log_transaction_start(request)
     try:
         # Log entry into POST /cats handler
         api_logger.info("🚨 POST /cats handler called")
