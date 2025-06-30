@@ -1,0 +1,39 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+# Core FastAPI dependencies
+fastapi = "*"
+uvicorn = "*"
+pydantic = "*"
+
+# Environment and configuration
+python-dotenv = "*"
+
+# Database and API
+supabase = "*"
+asyncpg = "*"
+
+# Authentication and security
+pyjwt = "*"
+cryptography = "*"
+bcrypt = "*"
+slowapi = "*"
+
+# HTTP client
+httpx = "*"
+
+# Logging and monitoring
+colorlog = "*"
+psutil = "*"
+
+# Optional production dependencies
+prometheus-client = "*"
+statsd = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.12"

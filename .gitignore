@@ -1,0 +1,41 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg
+*.egg-info/
+dist/
+build/
+*.pyo
+*.pyd
+
+# Environment
+.env
+.env.*
+*.env.*
+
+# Logs
+*.log
+logs/
+audit_log.txt
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+
+# OS junk
+.DS_Store
+Thumbs.db
+
+# Uvicorn reload artifacts
+.hotreload/
+*.pid
+
+# Bytecode cache
+.pytest_cache/
+.cache/
+
+# Virtual environments
+.venv/
+venv/
+ENV/
